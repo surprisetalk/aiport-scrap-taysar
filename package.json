@@ -1,0 +1,24 @@
+{
+  "name": "aiport-scrap-taysar",
+  "version": "0.0.1",
+  "description": "",
+  "main": "taysar.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/surprisetalk/aiport-scrap-taysar.git"
+  },
+  "keywords": [
+    "aiport",
+    "scrap",
+    "taysar"
+  ],
+  "author": "taylor sarrafian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/surprisetalk/aiport-scrap-taysar/issues"
+  },
+  "homepage": "https://github.com/surprisetalk/aiport-scrap-taysar#readme"
+}
