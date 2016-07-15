@@ -1,9 +1,9 @@
 
 var scrap = require('../aiport-dev').scrap;
 
-module.exports = scrap({
-    title: "<h1>TAYSAR</h1>",
-    subtitle: subtitle => "<h2>" + subtitle + "</h2>",
-    body: strings => "<hr/>" + strings.map( string => "<p>" + string + "</p>" ),
-    footer: "<hr/>"
-});
+module.exports = scrap( ( options, query, htmler ) =>
+    htmler( { greeting: "world" } )
+      .then( html => 
+        "<h1 style='color:" + ( "color" in options ? options.color : "black" ) + ";'>TAYSAR</h1>" 
+        + "<p>" + ( "greeting" in query ? query.greeting : "nothing" ) + "</p>"
+        + "<div style='width:75%;margin:0 auto;border:1px solid blue;'>" + html + "</div>" ) );
